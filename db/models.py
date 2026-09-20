@@ -26,4 +26,4 @@ class Player(models.Model):
                              related_name="player")
     guild = models.ForeignKey(Guild, on_delete=models.SET_NULL, null=True,
                               related_name="player")
-    create_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
